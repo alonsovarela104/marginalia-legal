@@ -38,7 +38,7 @@
 <script>
 (function () {
   var route = new URLSearchParams(location.search).get('r') || '';
-  var valid = /^\/(b|users|lists)\/[A-Za-z0-9-]{1,64}$/.test(route);
+  var valid = /^\/(b|users|lists|clubs)\/[A-Za-z0-9-]{1,64}$/.test(route);
   var open = document.getElementById('open');
   if (!valid) {
     document.getElementById('title').textContent = 'Enlace no válido';
